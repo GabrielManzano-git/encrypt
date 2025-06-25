@@ -20,11 +20,13 @@ int main(){
     if(choice == 'e'){
         printf("Encrypting %s with key %s\n", fileName, key);
         Encrypt(fileName, key);
+        printf("Finished encrypting the file");
         return 0;
     }
     else if(choice == 'd'){
-        printf("Encrypting %s with key %s\n", fileName, key);
+        printf("Dencrypting %s with key %s\n", fileName, key);
         Decrypt(fileName, key);
+        printf("Finished decrypting the file");
         return 0;
     }
     /*else if(choice == 'p'){
